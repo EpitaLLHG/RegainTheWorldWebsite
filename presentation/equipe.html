@@ -1,85 +1,43 @@
 <!doctype html>
-<html lang="en">
+
+<html lang="fr">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="../img/favicon.png" type="../image/png">
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <title>Regain the world</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/themify-icons.css">
-    <link rel="stylesheet" href="../vendors/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="../vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
     <!-- main css -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
-    <!--================Header Menu Area =================-->
-    <header class="header_area">    
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="../index.html"><img src="../img/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="..\index.html">Acceuil</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="..\telechargement.html">Téléchargement</a></li> 
+    <!--Navigation bar-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <div id="nav-placeholder">
 
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">présentation</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="equipe.html">equipe</a></li> 
-                                    <li class="nav-item"><a class="nav-link" href="historique.html">Historique</a></li>
-                                </ul>
-                            </li>
+    </div>
 
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ressources</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li> 
-                                    <li class="nav-item"><a class="nav-link" href="price.html">Price</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="element.html">Element</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-                                </ul>
-                            </li> 
-                            <li class="nav-item"><a class="nav-link" href="..\contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="right-button">
-                        <ul>
-                            <li><a class="sign_up" href="">Sign Up</a></li>
-                        </ul>
-                    </div> 
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--================Header Menu Area =================-->
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("../navigation.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
 
 
     <!--================Hero Banner Area Start =================-->
     <section class="hero-banner d-flex align-items-center">
         <div class="container text-center">
             <h2>équipe</h2>
-            <p><BR>Ici, vous trouverez chaque membre de l'équipe.</p>
+            <p><BR>ici vous trouverez chaque membre de l'équipe</p>
         </div>
     </section>
     <!--================Hero Banner Area End =================-->
@@ -95,8 +53,8 @@
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    	<img src="..\img\equipe\leof.JPG" height="165" width="135">        Léo Farhi
-                                    	<p style="font-size: 10px"><img src="..\img\equipe\th.JPG" height="20" width="40">Chef de projet </p>
+                                    	<img src="img/equipe/leoF.jpg" height="165" width="135">        Léo Farhi
+                                    	<p style="font-size: 10px"><img src="img/equipe/th.jpg" height="20" width="40">Chef de projet </p>
                                     </button>
 
                                 </h5>
@@ -114,7 +72,7 @@
                             <div class="card-header" id="headingTwo">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    	<img src="..\img\equipe\geoffrey.JPG" height="165" width="135">
+                                    	<img src="img/equipe/geoffrey.jpg" height="165" width="135">
                                     	Geoffrey Elbaz
                                     </button>
                                 </h5>
@@ -130,7 +88,7 @@
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    	<img src="..\img\equipe\leoA.JPG" height="165" width="135">
+                                    	<img src="img/equipe/leoA.jpg" height="165" width="135">
                                        Léo Alba
                                        </button>
                                 </h5>
@@ -145,7 +103,7 @@
                         <div class="card">
                             <div class="card-header" id="headingFour">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><img src="..\img\equipe\hugo.JPG" height="165" width="135">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><img src="img/equipe/hugo.jpg" height="165" width="135">
                                     	Hugo Rubio
                                     </button>
                                 </h5>
@@ -174,7 +132,7 @@
                     <h4>à propos de nous</h4>
                     <p>nous sommes un groupe motivé et créatife de l'école épita paris</p>
                     <div class="footer-logo">
-                        <img src="../img/logo.png" alt="">
+                        <img src="img/logo.png" alt="">
                     </div>
                 </div>
 

@@ -99,29 +99,25 @@
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    	<img src="img/equipe/leoA.jpg" height="165" width="135">
-                                       Léo Alba
+                                        Bugs et solutions
                                        </button>
                                 </h5>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Bonjour jeune inconnu. Qui je suis? Je suis un membre qui a su apprendre et évoluer grâce à ce projet. Moi qui ne connaissait presque rien à unity, je suis devenu le principal designer des structures que vous pourrez voir dans le jeu.                      
-                                </div>
-                            </div>
-                        </div>
+                                    L’un des premiers bugs majeurs que nous avons rencontrés est qu’un des créateurs a perdu une bonne partie de son travail car il ne le postait pas régulièrement. En effet, ce qu’il avait créé a fini par être corrompu. La solution fut alors pour lui de charger une backup ce qui lui a fait malheureusement perdre plusieurs heures de travail.
+                                    <br>
+                                    Il y a aussi un bug avec le système de portail qui affiche mal l’eau quand on regarde à travers celui-ci. Cela est dû à un problème de rendu graphique.
+                                    <br>
+                                    Les bugs d’animation ont été certainement les bugs les plus amusants à voir (comme lorsqu’une IA attaque, elle glisse en même temps sur le sol ou encore des roulades dans le vide etc…). Mais ces derniers ont été aussi les plus difficiles à régler. En effet, comme nous ne sommes pas très habitués aux systèmes et propriétés des animations, trouver des solutions à ces problèmes nous a pris beaucoup de temps et de ressources pour un résultat qui n’est pas forcément de haute qualité.
+                                    <br>
+                                    Enfin les bugs avec les IA sont assez nombreux. Par exemple, l'IA peut prendre
+                                    beaucoup de vitesse et commencer à glisser sur le sol extrêmement rapidement. Après recherche, ce bug est causé par les IA qui se déplacent sur le “navmesh” tout en étant affectées par la gravité. Le problème vient du "navmesh" qui n'est pas en contact avec le sol. Par conséquent, si une IA marche sur un terrain en pente, elle va glisser sur le sol et comme elle ne touche pas le sol, elle va prendre aussi beaucoup de vitesse. Pour régler ce problème, nous avons donc augmenté la hauteur du terrain pour que l’IA touche le sol. Une autre alternative est d’augmenter le “capsule collider” de l’IA vers le bas pour que celui-ci touche le sol.
+                                    <br>
+                                    Un autre bug majeur avec les IA est un bug permettant de créer un OOB (Out of bound). Cela permet au joueur de se promener partout sur le terrain en passant à travers toutes les textures et donc de finir le jeu plus rapidement en esquivant les parties difficiles ou longues en prenant des raccourcis. Ce bug est provoqué par la fonctionnalité qui permet au joueur d’échanger sa place avec une IA. Comme expliqué précédemment, le joueur peut échanger sa place avec une IA et une IA peut se téléporter auprès du joueur si elle se situe à une certaine distance du joueur. On peut donc à certains endroits de la carte, au niveau d’une zone inaccessible, faire en sorte que l’IA se téléporte vers le joueur mais à l’extérieur de la zone de jeu et à ce moment précis. Le joueur échange sa place avec celle de l’IA. Il se retrouve donc à l'extérieur de la zone jouable. Il a donc créé un OOB.
+                                    <br> 
+                                    L’un des bugs que nous avons rencontrés était que nous pouvions ouvrir l’inventaire lorsqu’une cinématique était jouée.
 
-                        <div class="card">
-                            <div class="card-header" id="headingFour">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><img src="img/equipe/hugo.jpg" height="165" width="135">
-                                    	Hugo Rubio
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Great day without sixth a lesser beginning. Their thing abundantly air moving saw fruitful lesser god. Sea abundantly blessed life set. Land. Lights divided man in deep in open upon.
                                 </div>
                             </div>
                         </div>
